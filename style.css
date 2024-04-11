@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --cor-roxo_forte: #331E38;
+    --cor-roxo_claro: #94778B;
+    --cor-cinza_escuro: #353D2F;
+    --cor-cinza_claro: #667761;
+    --cor-azul_claro: #E6FAFC;
+  }
+
+body {
+    background-color: var(--cor-roxo_forte);
+}
+
+#espaco {
+    background-size: contain;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor-cinza_claro); 
+    background-image: url('../imagens/fundo-removebg-preview.png');
+    background-repeat: no-repeat; /*Para não repetir a imagem*/
+    background-size: contain; /*Ajusta a imagem para caber na tela sem distorção*/
+    /* background-position: center center; */
+    background-position: center top 80px; /* Move a imagem 50 pixels abaixo do topo */
+    border-radius: 15px;
+ 
+}
+
+
+header > .link-instagram {
+    display: inline-block; /* Garante que a imagem seja tratada como um bloco para aplicar transformações */
+    transition: transform 0.3s ease; /* Suaviza a transição da transformação */
+    margin-top: 4px;
+    margin-left: 10px;
+  
+}
+#espaco {
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+#titulo1, #titulo2 {
+    display: inline-block; /* Ou display: inline; */
+    margin-right: 150px; /* Adiciona um espaçamento entre os títulos */
+}
+#insta {
+    width: 38.2px;
+    position: fixed; /* Define a posição fixa */
+    top: 35px; /* Ajusta a distância do topo */
+    left: 40px; /* Ajusta a distância da esquerda */
+}
+
+#insta:hover {
+    transform: scale(1.3); /* Aumenta o tamanho da imagem em 30% quando o mouse passa sobre ela */
+}
+.relativo {
+    position: relative;
+}
+
+.neferiti {
+    width: 15%;
+    height: 14vh;
+    background-size: contain; /*Ajusta a imagem para caber na tela sem distorção*/
+    position: absolute;
+    top: 10%;
+    left: 45%; /* ou outra posição desejada */
+    transform: translateX(-50%);
+}
+
+main div header h1 {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: var(--cor-roxo_forte);
+    text-align: center;
+  
+}
+
+
